@@ -18,6 +18,11 @@ const taskSchema = new mongoose.Schema(
       enum: ["Pending", "Completed"],
       default: "Pending",
     },
+
+    ownerId: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
